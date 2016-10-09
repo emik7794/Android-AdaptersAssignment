@@ -10,7 +10,11 @@
     tools:context="famaf.unc.edu.ar.activitiesassignment.ar.edu.unc.famaf.redditreader.NewsActivityFragment"
     tools:showIn="@layout/activity_news">
 
-
+    <ListView
+        android:id="@+id/postsLV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+<!--
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,4 +22,6 @@
         android:id="@+id/loginStatusTextView"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
+-->
 </RelativeLayout>
