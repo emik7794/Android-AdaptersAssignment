@@ -1,9 +1,9 @@
 package ar.edu.unc.famaf.redditreader.backend;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
+import ar.edu.unc.famaf.redditreader.R;
 import ar.edu.unc.famaf.redditreader.model.PostModel;
 
 public class Backend {
@@ -20,42 +20,45 @@ public class Backend {
         List<PostModel> postModelsList = new ArrayList<>();
 
         PostModel postModel1 = new PostModel();
-        PostModel postModel2 = new PostModel();
-        PostModel postModel3 = new PostModel();
-        PostModel postModel4 = new PostModel();
-        PostModel postModel5 = new PostModel();
-
-        postModel1.setTitle("title1");
-        postModel2.setTitle("title2");
-        postModel3.setTitle("title3");
-        postModel4.setTitle("title4");
-        postModel5.setTitle("title5");
-
-        postModel1.setAuthor("author1");
-        postModel2.setAuthor("author2");
-        postModel3.setAuthor("author3");
-        postModel4.setAuthor("author4");
-        postModel5.setAuthor("author5");
-
-        postModel1.setDate("date1");
-        postModel2.setDate("date2");
-        postModel3.setDate("date3");
-        postModel4.setDate("date4");
-        postModel5.setDate("date5");
-
+        postModel1.setTitle("Este es el titulo numero 1");
+        postModel1.setAuthor("r/author1");
+        postModel1.setDate("Hace 1hora");
         postModel1.setComments(10);
+        postModel1.setPreviewId(R.drawable.reddit_icon);
+
+        PostModel postModel2 = new PostModel();
+        postModel2.setTitle("Este es el titulo numero 2");
+        postModel2.setAuthor("r/author2");
+        postModel2.setDate("Hace 2horas");
         postModel2.setComments(20);
+        postModel2.setPreviewId(R.drawable.reddit_icon);
+
+        PostModel postModel3 = new PostModel();
+        postModel3.setTitle("Este es el titulo numero 3");
+        postModel3.setAuthor("r/author3");
+        postModel3.setDate("Hace 3horas");
         postModel3.setComments(30);
+        postModel3.setPreviewId(R.drawable.reddit_icon);
+
+        PostModel postModel4 = new PostModel();
+        postModel4.setTitle("Este es el titulo numero 4");
+        postModel4.setAuthor("r/author4");
+        postModel4.setDate("Hace 4horas");
         postModel4.setComments(40);
+        postModel4.setPreviewId(R.drawable.reddit_icon);
+
+        PostModel postModel5 = new PostModel();
+        postModel5.setTitle("Este es el titulo numero 5");
+        postModel5.setAuthor("r/author5");
+        postModel5.setDate("Hace 5horas");
         postModel5.setComments(50);
+        postModel5.setPreviewId(R.drawable.reddit_icon);
 
-        postModel1.setPreviewId(1);
-        postModel2.setPreviewId(2);
-        postModel3.setPreviewId(3);
-        postModel4.setPreviewId(4);
-        postModel5.setPreviewId(5);
-
-        Collections.addAll(postModelsList, postModel1, postModel2, postModel3, postModel4, postModel5);
+        postModelsList.add(postModel1);
+        postModelsList.add(postModel2);
+        postModelsList.add(postModel3);
+        postModelsList.add(postModel4);
+        postModelsList.add(postModel5);
 
         return postModelsList;
     }

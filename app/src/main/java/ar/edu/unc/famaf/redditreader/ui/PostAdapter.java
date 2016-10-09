@@ -58,9 +58,9 @@ public class PostAdapter extends ArrayAdapter<PostModel> {
         ImageView previewImageId = (ImageView) convertView.findViewById(R.id.previewIV);
 
         titleText.setText(pm.getTitle());
-        authorText.setText(pm.getTitle());
-        commentsText.setText(pm.getTitle());
-        dateText.setText(pm.getTitle());
+        authorText.setText(pm.getAuthor());
+        commentsText.setText(String.valueOf(pm.getComments()));
+        dateText.setText(pm.getDate());
         previewImageId.setImageResource(pm.getPreviewId());
 
         return convertView;
